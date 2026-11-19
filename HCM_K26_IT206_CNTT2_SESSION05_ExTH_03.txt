@@ -1,0 +1,65 @@
+SESSION05
+[Bài thực hành 3] Phân tích và giải quyết tình huống khách hàng khiếu nại
+
+Tên lớp: HCM K26 CNTT2
+Môn học: Kỹ năng PROMPTING với AI
+Họ và tên: LƯƠNG THANH THƯ
+
+1. Prompt hoàn chỉnh (Chain-of-Thought)
+Bạn là chuyên viên chăm sóc khách hàng của cửa hàng laptop.
+[KHIẾU NẠI]: "Tôi mua laptop cách đây 10 ngày. Máy thường xuyên bị nóng, quạt kêu to và pin chỉ dùng được khoảng 2 tiếng. Tôi đã mang đến cửa hàng, nhân viên chỉ vệ sinh máy và trả lại. Sau 2 ngày tình trạng vẫn tiếp diễn. Tôi muốn đổi máy hoặc hoàn tiền."
+
+Hãy suy luận TỪNG BƯỚC, ghi rõ từng bước:
+Bước 1: Tách các dữ kiện có trong khiếu nại (chỉ chép lại, không suy diễn).
+Bước 2: Nêu giả thuyết về nguyên nhân, ghi rõ "chưa kiểm chứng".
+Bước 3: Liệt kê thông tin chưa xác định.
+Bước 4: Đánh giá mức độ nghiêm trọng từng vấn đề (cao/trung bình/thấp) kèm lý do.
+Bước 5: Lập danh sách thông tin cần xác minh, nói rõ hỏi ai và để làm gì.
+Bước 6: Đề xuất 2 phương án xử lý, kèm ưu điểm và hạn chế.
+Bước 7: Soạn phản hồi chuyên nghiệp gửi khách.
+
+Quy tắc:
+- KHÔNG tự giả định chính sách đổi trả/bảo hành của cửa hàng. Mọi điểm phụ thuộc chính sách phải ghi "cần đối chiếu chính sách".
+- Phân biệt rõ nhãn: [DỮ KIỆN] / [GIẢ THUYẾT] / [CHƯA XÁC ĐỊNH].
+- Không kết luận khi thiếu căn cứ.
+2. Báo cáo phân tích từng bước
+Bước 1, dữ kiện:
+Mua cách đây 10 ngày.
+Máy nóng, quạt kêu to, pin khoảng 2 tiếng.
+Đã mang đến cửa hàng, nhân viên vệ sinh máy rồi trả lại.
+Sau 2 ngày, tình trạng vẫn tiếp diễn.
+Khách muốn đổi máy hoặc hoàn tiền.
+Bước 2, giả thuyết (chưa kiểm chứng):
+Lỗi tản nhiệt (keo, quạt) hoặc lỗi linh kiện.
+Phần mềm chạy nền nhiều, hoặc đang bật chế độ hiệu năng cao.
+Pin 2 tiếng có thể bình thường với một số dòng máy khi chạy tác vụ nặng.
+Bước 3, chưa xác định: chính sách đổi trả, thời hạn bảo hành, model máy, khách đang dùng máy làm gì, nhiệt độ thực tế, ngoại quan máy.
+Bước 4, mức độ nghiêm trọng:
+Máy nóng, quạt ồn: cao, vì ảnh hưởng độ bền, trải nghiệm.
+Xử lý lần 1 không hiệu quả: cao, vì lỗi lặp lại, khách mất niềm tin.
+Pin 2 tiếng: trung bình, cần so với thông số của đúng model.
+Yêu cầu đổi/hoàn tiền: chưa kết luận được, phụ thuộc chính sách.
+Bước 5: xem mục 3.
+Bước 6: xem mục 4.
+Bước 7, phản hồi gửi khách:
+
+Chào anh/chị, cảm ơn anh/chị đã phản hồi. Chúng tôi rất tiếc vì máy vẫn nóng, quạt ồn và pin hao nhanh sau lần kiểm tra trước. Để xử lý đúng và nhanh nhất, chúng tôi xin phép kiểm tra lại máy kỹ hơn và ghi nhận tình trạng bằng biên bản. Anh/chị vui lòng cho chúng tôi biết dòng máy, thời điểm tình trạng này xảy ra và mang theo hóa đơn, phiếu tiếp nhận lần trước. Về đề nghị đổi máy hoặc hoàn tiền, chúng tôi sẽ đối chiếu với chính sách của cửa hàng và phản hồi anh/chị sớm. Xin cảm ơn sự kiên nhẫn của anh/chị.
+
+3. Thông tin cần xác minh
+Hóa đơn, ngày mua, model máy: để biết thời hạn và điều kiện áp dụng.
+Chính sách đổi trả và bảo hành: hỏi quản lý, vì không được tự giả định.
+Phiếu tiếp nhận lần 1: để biết nhân viên đã làm gì.
+Máy khách dùng làm gì khi bị nóng: ví dụ chơi game hay chỉ lướt web.
+Pin 2 tiếng ở tác vụ nào: so với thông số pin của hãng.
+Nhiệt độ và tiếng quạt thực tế: kỹ thuật đo khi chạy tải.
+Ngoại quan máy: có rơi, vào nước, can thiệp tự sửa không.
+Phần mềm cài thêm: để loại trừ nguyên nhân phần mềm.
+4. Hai phương án xử lý
+
+Phương án A: Kiểm tra kỹ thuật chính thức, rồi xử lý theo kết quả
+Ưu điểm: có căn cứ rõ ràng, khách thấy minh bạch, tránh quyết định vội.
+Hạn chế: khách phải chờ, có thể không hài lòng vì muốn đổi ngay.
+
+Phương án B: Đề xuất đổi máy hoặc hoàn tiền (chỉ khi chính sách cho phép)
+Ưu điểm: giải quyết nhanh, giữ được khách hàng.
+Hạn chế: phụ thuộc chính sách, có thể tốn chi phí nếu lỗi không phải do máy.
